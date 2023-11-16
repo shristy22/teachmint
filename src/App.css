@@ -1,38 +1,95 @@
-.App {
+.people-dir{
+  display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    padding: 15px 25px;
+    margin: 25px;
+    background-color: #d3e3f0;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+}
+h2{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dir-layout{
+  margin: 30px 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.back-btn{
+    background-color: #d3e3f0;
+    border: 1px solid;
+    padding: 2px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-profile-layout{
+    margin: 25px;
+    /* border: 1px solid;
+    padding: 0px 10px;
+    text-decoration: none; */
+    color: black;
+}
+.profile-page{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  border: 1px solid;
+  padding: 15px 25px;
+  margin: 25px 10px;
+  border-radius: 12px;
+  color: black;
+}
+.top-user{
+  display: flex;
+  justify-content: space-between;
+}
+.timer-right{
+  display: flex;
+}
+.center{
+  text-align: center;
+}
+.post-title{
+  border: 1px solid;
+  padding: 15px 25px;
+  margin: 25px;
+  border-radius: 12px;
+  color: black;
+}
+.d-flex{
+  display: flex;
+}
+.drop-down{
+  width: 160px;
+}
+.timer-format{
+  background-color: #231d1d;
   color: white;
+  padding: 8px;
+  margin: 0px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.post {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 15px 25px;
+  border-radius: 12px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .post {
+    width: calc(100% - 20px);
   }
 }
